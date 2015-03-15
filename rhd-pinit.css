@@ -1,0 +1,27 @@
+.pinterest-button {
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 0;
+}
+
+.pinterest-button .pin-it {
+    display: none;
+}
+
+.pinterest-button:hover .pin-it {
+    display: block;
+}
+
+.pin-it {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url('img/lovelypinit.png');
+    background-size: 100%;
+    z-index: 10;
+    top: 1em;
+    left: 1em;
+    position: absolute;
+}
