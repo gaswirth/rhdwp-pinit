@@ -9,6 +9,13 @@
 
 // Adapted from uxde.net's example
 
+/**
+ * rhd_pinit_enqueue_styles function.
+ * Enqueue stylesheets
+ *
+ * @access public
+ * @return void
+ */
 function rhd_pinit_enqueue_styles() {
 	wp_register_style( 'rhd-pinit', plugin_dir_url(__FILE__) . 'rhd-pinit.css', array(), '1.1', 'all' );
 
@@ -17,6 +24,13 @@ function rhd_pinit_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'rhd_pinit_enqueue_styles' );
 
 
+/**
+ * rhd_pinit function.
+ *
+ * @access public
+ * @param mixed $content
+ * @return void
+ */
 function rhd_pinit( $content ) {
 	global $post;
 	$posturl = urlencode( get_permalink() ); //Get the post URL
