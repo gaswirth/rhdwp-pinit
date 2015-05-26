@@ -7,8 +7,10 @@
  * Version: 1.1
 **/
 
-// Adapted from uxde.net's example
+define('RHD_PINIT_DIR', plugin_dir_url(__FILE__));
 
+
+// Adapted from uxde.net's example
 /**
  * rhd_pinit_enqueue_styles function.
  * Enqueue stylesheets
@@ -17,7 +19,7 @@
  * @return void
  */
 function rhd_pinit_enqueue_styles() {
-	wp_register_style( 'rhd-pinit', plugin_dir_url(__FILE__) . 'rhd-pinit.css', array(), '1.1', 'all' );
+	wp_register_style( 'rhd-pinit', RHD_PINIT_DIR . 'rhd-pinit.css', array(), '1.1', 'all' );
 
 	wp_enqueue_style( 'rhd-pinit' );
 }
