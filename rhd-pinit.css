@@ -7,21 +7,26 @@
 }
 
 .pinterest-button .pin-it {
-    display: none;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
 }
 
 .pinterest-button:hover .pin-it {
-    display: block;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
 }
 
 .pin-it {
     display: block;
-    width: 100px;
-    height: 100px;
-    background-image: url('img/lovelypinit.png');
+    width: 75px;
+    height: 75px;
+    background-image: url('img/pinterest.png');
     background-size: 100%;
     z-index: 10;
-    top: 1em;
-    right: 1em;
+    top: 1.5rem;
+    right: 1rem;
     position: absolute;
+    transition: all 0.35s;
 }
