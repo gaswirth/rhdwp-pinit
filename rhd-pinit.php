@@ -39,8 +39,8 @@ function rhd_pinit( $content ) {
 	$pattern = '/<img(.*?)src="(.*?).(bmp|gif|jpg|png)"(.*?)>/i';
 	preg_match( $pattern, $content, $tag );
 
-	/* Make sure image doesn't have class "no-pin" and process if true */
-	if ( !stripos($tag[1], "no-pin") ) {
+	/* Make sure image doesn't have class "no-pin" or "nopin" and process if true */
+	if ( !stripos($tag[1], "no-pin") && !stripos($tag[1], "nopin") ) {
 		$title_attr = preg_match( '/title="(.*?)"/', $tag[1], $titlematch );
 
 		//$desc = preg_replace('/\s/', '%20', $titlematch[1]);
