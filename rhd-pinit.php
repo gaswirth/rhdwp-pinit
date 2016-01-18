@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: PinIt Button
+ * Plugin Name: RHD Pin It Button
  * Description: Adds a Pinterest "Pin It" button when hovering over images inside posts.
  * Author: Roundhouse Designs
  * Author URI: http://roundhouse-designs.com
