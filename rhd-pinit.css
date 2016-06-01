@@ -21,11 +21,11 @@
 .pin-it {
     display: block;
     width: 75px;
-    height: 75px;
+    height: 65px;
     background-image: url('img/pinterest.png');
     background-size: 100%;
     z-index: 10;
-    top: 1.5rem;
+    top: 2rem;
     right: 1rem;
     position: absolute;
     transition: all 0.35s;

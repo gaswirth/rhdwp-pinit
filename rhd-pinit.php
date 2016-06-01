@@ -47,7 +47,7 @@ function rhd_pinit( $content ) {
 
 		$pinspan = '<span class="pinterest-button">';
 		$pinurl = '<a target="_blank" href="//pinterest.com/pin/create/button/?url=' . $posturl . '&media=';
-		$pindescription = '&description=' . get_the_title() . '%20|%20' . get_bloginfo('name');
+		$pindescription = '&description=' . urlencode( get_the_title() ) . '%20|%20' . get_bloginfo('name');
 		$pinfinish = '" class="pin-it"></a>';
 		$pinend = '</span>';
 		$replacement = $pinspan . $pinurl . '$2.$3' . $pindescription . $pinfinish . '<img$1src="$2.$3" $4 />' . $pinend;
