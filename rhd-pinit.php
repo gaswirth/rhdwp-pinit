@@ -4,7 +4,7 @@
  * Description: Adds a Pinterest "Pin It" button when hovering over images inside posts.
  * Author: Roundhouse Designs
  * Author URI: http://roundhouse-designs.com
- * Version: 1.1
+ * Version: 1.1.1
 **/
 
 define('RHD_PINIT_DIR', plugin_dir_url(__FILE__));
